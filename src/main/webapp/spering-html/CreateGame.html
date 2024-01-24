@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBigQuest</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shape-square.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shape-triangle.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shape-circle.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shape-rhombus.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/CreateQuestion.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                    </span>
+    
+                    <div class="text logo-text">
+                        <span class="name">ສ້າງເກມ</span>
+                        <!-- <span class="profession">Web developer</span> -->
+                    </div>
+                </div>
+    
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+    
+            <div class="menu-bar">
+                <div class="menu">
+                    <li class="search-box">
+                        <i class='bx bx-folder icon'></i>
+                        <input type="text" placeholder="ຫົວຂໍ້" id="Topic">
+                    </li>
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                           <button> 
+                            <a href="#">
+                                <i class='bx bx-plus icon'></i>
+                                <span class="text nav-text" id="add-question-btn" onclick="addQuestion()">ເພິ່ມຄຳຖາມ</span>
+                            </a>
+                        </button>
+                        </li>
+                        <li class="nav-link">
+                            <button>
+                                <a href="#">
+                                    <i class='bx bx-pencil icon'></i>
+                                    <span class="text nav-text" onclick="EditQuestion()">ແກ້ໄຂຄຳຖາມ</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-link">
+                            <button>
+                                <a href="#">
+                                    <i class='bx bx-trash icon'></i>
+                                    <span class="text nav-text" onclick="removeQuestion()">ລຶບອອກ</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-link">
+                           <button>
+                            <a href="#">
+                                <i class='bx bx-pie-chart-alt icon'></i>
+                                <span class="text nav-text">ກຳນົດເວລາ</span>
+            
+                            </a>
+                           </button>
+                        </li>
+                        <li class="nav-link">
+                           <button>
+                            <a href="#">
+                                <!-- <i class='bx bx-pie-chart-alt icon'></i> -->
+                                <i class='bx bx-star icon'></i>
+                                <span class="text nav-text">ຄະແນນ</span>
+                            </a>
+                           </button>
+                        </li>
+                        <li class="nav-link">
+                           <button>
+                            <a href="#">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="text nav-text">ປະເພດຄຳຖາມ</span>
+                            </a>
+                           </button>
+                        </li>
+                        <li class="nav-link">
+                           <button  type="button" onclick="submitForm()">
+                            <a href="#">
+                                <i class='bx bx-save icon'></i>
+                                <span class="text nav-text">ບັນທຶກຄຳຖາມ</span>
+                            </a>
+                           </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+    
+        <script>
+            // modeSwitch.addEventListener("click", () => {
+            //     body.classList.toggle("dark");
+    
+            //     // if (body.classList.contains("dark")) {
+            //     //     modeText.innerText = "Light mode";
+            //     // } else {
+            //     //     modeText.innerText = "Dark mode";
+    
+            //     // }
+            // });
+        </script>
+    
+    <main>
+        <section id="question-section">
+            <h2>Questions</h2>
+            <ul id="question-list">
+                <!-- Questions and answers will be dynamically added here -->
+            </ul>
+            <!-- <button id="add-question-btn" onclick="addQuestion()">Add Question</button> -->
+        </section>
+    </main>
+
+    <script src="js/CreateQuestion.js"></script>
+</body>
+
+</html>
